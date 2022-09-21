@@ -44,13 +44,13 @@ app.post('/api/notes', (req, res) => {
     const { title, text } = req.body;
   
     if (req.body) {
-      const note = {
+      const newNote = {
         title,
         text,
         id: uuid(),
       };
   
-      createNote(note, './db/db.json');
+      createNote(newNote, './db/db.json');
   
       res.json(`You have created a note`);
       
