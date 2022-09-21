@@ -1,0 +1,25 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "An application to take notes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Vance",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyle-vance/Note-Taker.git"
+  },
+  "keywords": [
+    "note-taker"
+  ],
+  "bugs": {
+    "url": "https://github.com/kyle-vance/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/kyle-vance/Note-Taker#readme"
+}
