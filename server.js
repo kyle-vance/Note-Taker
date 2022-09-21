@@ -39,7 +39,30 @@ const createNote = (string, file) => {
 app.get("/api/notes", (req, res) => {
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 }); 
+app.post('/api/notes', (req, res) => {
 
+    const { title, text } = req.body;
+  
+    if (req.body) {
+      const note = {
+        title,
+        text,
+        id: uuid(),
+      };
+  
+      createNote(note, './db/db.json');
+  
+      res.json(`You have created a note`);
+      
+    } else {
+      res.error('Unable to create note');
+    }
+  });
+  
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/index.html"))
+  });
+  
 app.listen(PORT, () =>
   console.log(`Server live at http://localhost:${PORT}.`)
 );
