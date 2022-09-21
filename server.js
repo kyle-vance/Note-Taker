@@ -19,18 +19,18 @@ app.get("/notes", (req, res) => {
 
 const readFromFile = util.promisify(fs.readFile);
 
-const writeToFile = (location, string) =>
-  fs.writeFile(location, JSON.stringify(string, null, 4), (err) =>
-    err ? console.error(err) : console.info(`Note added to ${location}`)
+const writeToFile = (destination, content) =>
+  fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
+    err ? console.error(err) : console.info(`Note added to ${destination}`)
   );
 
-const createNote = (string, file) => {
+const createNote = (content, file) => {
   fs.readFile(file, 'utf8', (err, data) => {
     if (err) {
       console.error(err);
     } else {
       const createdNote = JSON.parse(data);
-      createdNote.push(string);
+      createdNote.push(content);
       writeToFile(file, createdNote);
     }
   });
@@ -62,7 +62,7 @@ app.post('/api/notes', (req, res) => {
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./public/index.html"))
   });
-  
+
 app.listen(PORT, () =>
   console.log(`Server live at http://localhost:${PORT}.`)
 );
