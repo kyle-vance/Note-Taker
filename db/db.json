@@ -1,5 +1,12 @@
 [
-  {"id": "535613bc-6f44-44c6-bd64-b5a09f5cfdcf",
-  "title": "Some text",
-  "text": "Sample"}
+  {
+    "id": "535613bc-6f44-44c6-bd64-b5a09f5cfdcf",
+    "title": "Some text",
+    "text": "Sample"
+  },
+  {
+    "id": "6ec5b0f2-2ff1-4b1a-b163-7f4c8c3ac19d",
+    "title": "Work",
+    "text": "Get up and make coffee\nWork on coding instead of working (hopefully)\n"
+  }
 ]
