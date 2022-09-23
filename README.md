@@ -5,6 +5,15 @@
 ## Description
 This is a simple server-side application using express.js and node.js. The applicaiton allows the user to create and store notes.
 
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/105682564/192025008-202b505a-3916-46b9-9584-66c7abffb1fc.png">
+<img width="1265" alt="image" src="https://user-images.githubusercontent.com/105682564/192024945-f6198436-3842-440c-b6a4-90869616e4e1.png">
+
+## Deployed Application
+<a href="https://note-taker-kylevance.herokuapp.com/">Link to deployed Heruko page</a>
+
+
+
+
 ---
 
 ## Table of Contents
