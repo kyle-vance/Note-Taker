@@ -23,5 +23,7 @@
     "url": "https://github.com/kyle-vance/Note-Taker/issues"
   },
   "homepage": "https://github.com/kyle-vance/Note-Taker#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "dotenv": "^16.0.2"
+  }
 }
